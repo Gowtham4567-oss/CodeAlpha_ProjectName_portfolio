@@ -1,18 +1,13 @@
-// Dynamic contact form submission interception handler
 function handleFormSubmit(event) {
     event.preventDefault();
     
-    // Capturing runtime inputs from DOM context targets
     const inputs = event.target.querySelectorAll('input, textarea');
     const name = inputs[0].value;
     
-    alert(`Thank you for reaching out, ${name}! Your mockup portfolio form submitted successfully.`);
-    
-    // Clear out form text items upon visual confirmation
+    alert(`Thank you for reaching out, ${name}! Your form submitted successfully.`);
     event.target.reset();
 }
 
-// Fade-in animation hook on content tracking (Optional enhancement)
 window.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('section');
     
