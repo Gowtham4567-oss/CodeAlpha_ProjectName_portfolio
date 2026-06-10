@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Dev<span>Portfolio</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="about" class="hero-section">
+        <div class="hero-content">
+            <h3>Hello, I'm</h3>
+            <h1>Your Name</h1>
+            <h2>Frontend Developer Intern</h2>
+            <p>I build clean, accessible, dynamic, and responsive websites that provide seamless user experiences. Passionate about turning complex logic into pristine digital realities.</p>
+            <a href="resume.pdf" target="_blank" class="btn primary-btn">View My Resume</a>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">My Technical <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>HTML5</h3>
+                <p>Structure & Accessibility</p>
+            </div>
+            <div class="skill-card">
+                <h3>CSS3</h3>
+                <p>Flexbox, Grid, & Transitions</p>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <p>DOM, Logic, & Async APIs</p>
+            </div>
+            <div class="skill-card">
+                <h3>Git & GitHub</h3>
+                <p>Version Control & Collaboration</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Interactive Image Gallery</h3>
+                    <p>A responsive image gallery application designed using CSS grid layouts with dynamic lightbox image viewing controls and active category filters.</p>
+                    <a href="https://github.com/" target="_blank" class="project-link">View Repository &rarr;</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Basic Calculator</h3>
+                    <p>An elegant, fully-featured calculator interface built with HTML, CSS grid architecture, and JavaScript functional programming.</p>
+                    <a href="https://github.com/" target="_blank" class="project-link">View Repository &rarr;</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Music Player Web Application</h3>
+                    <p>A dynamic web music application that integrates custom sound rendering libraries, dynamic runtime tracking bars, and custom playlist states.</p>
+                    <a href="https://github.com/" target="_blank" class="project-link">View Repository &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <p class="contact-subtitle">Have an exciting internship project or position? Let's connect!</p>
+        
+        <div class="contact-container">
+            <div class="contact-info-box">
+                <p><strong>Email:</strong> your.email@example.com</p>
+                <p><strong>LinkedIn:</strong> linkedin.com/in/yourusername</p>
+                <p><strong>GitHub:</strong> github.com/yourusername</p>
+            </div>
+
+            <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email Address" required>
+                <textarea rows="5" placeholder="Your Message Content" required></textarea>
+                <button type="submit" class="btn form-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Your Name. Powered by CodeAlpha Internship Track.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
